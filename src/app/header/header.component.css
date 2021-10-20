@@ -7,8 +7,6 @@ li {
 }
 
 a {
-  text-decoration: none;
-  font-family: 'Poppins', sans-serif;
   font-size: 1.1rem;
   font-weight: 200;
   color:black;
@@ -60,13 +58,13 @@ a {
   color: #FD6168;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
   .nav-menu {
     align-items: flex-start;
     position: fixed;
     left: -100%;
-    top: 5rem;
+    top: 4.9rem;
     flex-direction: column;
     background-color: white;
     width: 90%;

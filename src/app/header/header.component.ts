@@ -10,7 +10,7 @@ export class HeaderComponent {
   constructor() { }
 
   openedMobileMenu: boolean = false
-  imageSource: string = "/src/assets/img/portrait-vianney-rond-nobg.png"
+  imageSource: string = "assets/img/portrait-vianney-rond-nobg.png"
   
   mobileMenu() {
     this.openedMobileMenu = !this.openedMobileMenu
