@@ -1,0 +1,74 @@
+section {
+  height: auto;
+  background-color: #202124;
+  padding-bottom: 150px;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 100px 0 50px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.intro {
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin: 30px 0 0;
+  padding: 0 6rem;
+  line-height: 1.6rem;
+}
+
+.progress {
+  width: 90%;
+  margin-top: 12px;
+  height: 35px;
+  background-color: #2a2b2e;
+  border-radius: 5px;
+}
+
+.progress-bar {
+  background-color: #303134;
+  color: whitesmoke;
+  font-size: 0.9rem;
+  font-weight: 300;
+  text-align: left;
+  padding: 15px;
+  width: 17%;
+}
+
+.coloredBar {
+  background-color: #e9b44b;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+@media screen and (max-width: 1200px) {
+  section {
+    padding-bottom: 75px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .intro {
+    font-size: 1.2rem;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  .progress {
+    width: 100%;
+  }
+
+  .progress-bar {
+    font-size: 0.7rem;
+    padding: 10px;
+    width: 24%;
+  }
+}
