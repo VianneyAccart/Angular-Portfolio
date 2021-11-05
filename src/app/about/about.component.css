@@ -1,0 +1,46 @@
+section {
+    height: 100vh;
+    background-color: #202124;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 100px 0 80px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.intro {
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin: 30px 0 0;
+    padding: 0 6rem;
+    line-height: 1.6rem;
+}
+
+.progress {
+    width: 80%;
+    margin-top: 12px;
+    height: 35px;
+    background-color: #2a2b2e;
+    border-radius: 5px;
+}
+
+.progress-bar {
+    background-color: #303134;
+    color: whitesmoke;
+    font-size: .9rem;
+    font-weight: 300;
+    text-align: left;
+    padding: 15px;
+}
+
+.coloredBar {
+    background-color: #e9b44b;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
