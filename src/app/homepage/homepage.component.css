@@ -43,7 +43,6 @@ h1 {
   }
   
   .title-image {
-    background-image: url(./assets/img/splash-light.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
