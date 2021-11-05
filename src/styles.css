@@ -1,16 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
-
 html,
 body {
   height: 100%;
 }
+
+html {
+  min-width: 360px;
+}
+
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
+
 p, a, h1, h2, h3, h4 {
     font-family: "Poppins", sans-serif;
 }
+
 a {
   text-decoration: none;
 }
