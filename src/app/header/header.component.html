@@ -2,13 +2,13 @@
     <nav class="navbar d-flex justify-content-end align-items-center w-100">
         <ul [ngClass]="{'active' : openedMobileMenu === true}" class="nav-menu">
             <li class="nav-item">
-                <a href="#" class="nav-link">A PROPOS</a>
+                <a routerLink="/" fragment="about" class="nav-link">A PROPOS</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">REALISATIONS</a>
+                <a routerLink="/" fragment="realisations" class="nav-link">REALISATIONS</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">CONTACT</a>
+                <a routerLink="/" fragment="contact" class="nav-link">CONTACT</a>
             </li>
         </ul>
         <div [ngClass]="{'active' : openedMobileMenu === true}" (click)="mobileMenu()" class="hamburger">
