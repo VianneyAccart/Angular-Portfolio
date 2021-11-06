@@ -6,10 +6,9 @@
     </div>
     <div class="row d-flex justify-content-center">
         <div class="col-xl-5 col-md-10 col-11 flex-column d-flex justify-content-center align-items-center">
-            <img src="/assets/img/portrait-vianney-accart.png" alt="Un portrait de Vianney Accart">
-            <p class="text-center intro">Mon rôle est de concevoir des solutions à la fois performantes, intuitives et
-                responsive, qui s'adaptent à vos
-                besoins.</p>
+            <img [src]="portrait" alt="Un portrait de Vianney Accart">
+            <p class="text-center intro">{{intro}}</p>
+            <a [href]="curriculum" target="_blank" rel="noopener noreferrer"><button class="myButton">CURRICULUM VITAE</button></a>
         </div>
         <div class="col-xl-7 col-md-9 col-11">
             <div class="progress">
