@@ -22,14 +22,17 @@ h1,
   color: white;
   font-size: 3rem;
   text-align: center;
-  animation-name: bounce;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
   z-index: 0;
 }
 
 .bi.bi-arrow-down-circle:hover {
   color: #e9b44b;
+}
+
+.bounce {
+  animation-name: bounce;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes bounce {
