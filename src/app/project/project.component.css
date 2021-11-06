@@ -1,0 +1,23 @@
+.card {
+  background-color: #202124;
+}
+
+.card-img-top {
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.myButton {
+  width: 14rem;
+  height: 50px;
+  border: solid 1px whitesmoke;
+  background-color: transparent;
+  color: whitesmoke;
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+
+.myButton:hover {
+  border: solid 1px #e9b44b;
+  color: #e9b44b;
+}

@@ -1,7 +1,12 @@
 <section class="container-fluid">
     <div class="row d-flex justify-content-center">
-        <div class="col-xl-10">
+        <div class="col-10">
             <h2 id="realisations">REALISATIONS</h2>
+        </div>
+    </div>
+    <div class="row d-flex justify-content-center">
+        <div *ngFor="let project of realisations" class="container d-flex justify-content-center">
+            <app-project [project]="project"></app-project>
         </div>
     </div>
 </section>
