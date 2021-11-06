@@ -1,10 +1,8 @@
-<div *ngIf="project" class="col-10 col-md-6 col-xl-4 my-3 px-2">
-    <div class="card">
-        <img src="{{project.projectImage}}" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h3>{{project.projectName}}</h3>
-            <p>{{project.usedTechnologies}}</p>
-            <a href="{{project.projectUrl}}" class="myButton">DECOUVRIR</a>
-        </div>
+<div *ngIf="project" class="card">
+    <img src="{{project.projectImage}}" class="card-img-top" alt="Images qui présentent le site {{project.projectName}}">
+    <div class="card-body">
+        <h3>{{project.projectName}}</h3>
+        <p class="technologies">{{project.usedTechnologies}}</p>
+        <a href="{{project.projectUrl}}" target="_blank" rel="noopener noreferrer" class="myButton">DECOUVRIR</a>
     </div>
 </div>

@@ -1,10 +1,19 @@
 .card {
   background-color: #202124;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.413) 1px 1px 5px;
 }
 
-.card-img-top {
-  padding: 5px;
-  border-radius: 10px;
+h3 {
+  color: #e9b44b;
+  font-size: 1.3rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+.technologies {
+  margin-bottom: 30px;
+  font-weight: 100;
 }
 
 .myButton {
@@ -20,4 +29,11 @@
 .myButton:hover {
   border: solid 1px #e9b44b;
   color: #e9b44b;
+}
+
+@media screen and (max-width: 460px) {
+
+  h3 {
+    font-size: 1rem;
+  }
 }
