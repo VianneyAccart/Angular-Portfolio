@@ -1,0 +1,21 @@
+section {
+  height: auto;
+  background-color: #303134;
+  padding-bottom: 150px;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 100px 0 50px;
+}
+
+@media screen and (max-width: 1200px) {
+  section {
+    padding-bottom: 75px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+}

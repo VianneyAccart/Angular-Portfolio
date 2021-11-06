@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomepageComponent } from './homepage/homepage.component';
 import { BannerComponent } from './banner/banner.component';
 import { AboutComponent } from './about/about.component';
+import { RealisationsComponent } from './realisations/realisations.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { AboutComponent } from './about/about.component';
     FooterComponent,
     HomepageComponent,
     BannerComponent,
-    AboutComponent
+    AboutComponent,
+    RealisationsComponent
   ],
   imports: [
     BrowserModule,
