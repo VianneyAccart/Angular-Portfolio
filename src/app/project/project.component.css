@@ -1,3 +1,7 @@
+p {
+  margin: 0;
+}
+
 .card {
   background-color: #202124;
   border: none;
@@ -12,18 +16,18 @@ h3 {
 }
 
 .technologies {
-  margin-bottom: 30px;
   font-weight: 100;
+  margin-bottom: 30px;
 }
 
 .myButton {
-  width: 14rem;
-  height: 50px;
+  width: 10rem;
+  height: 40px;
   border: solid 1px whitesmoke;
   background-color: transparent;
   color: whitesmoke;
-  font-weight: 100;
-  font-size: 1.2rem;
+  font-weight: 300;
+  font-size: 1rem;
 }
 
 .myButton:hover {
@@ -31,8 +35,76 @@ h3 {
   color: #e9b44b;
 }
 
-@media screen and (max-width: 460px) {
+.moreDetails {
+  display: none;
+  background-color: #202124;
+  height: 100%;
+  top: -100%;
+  position: absolute;
+  width: 100%;
+  transition: 3s;
+  margin: 0;
+  border-radius: 2px;
+}
 
+.moreDetails.active {
+  display: block;
+  top: 0;
+  opacity: 100;
+}
+
+.moreDetailsElements {
+  padding-left: 20px;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+.bar:nth-child(2) {
+  opacity: 0;
+}
+
+.bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.closeButtonContainer {
+  margin: 0;
+  height: 15%;
+  background-color: #202124;
+}
+
+.descriptionContainer {
+  background-color: #202124;
+  height: 67%;
+  margin: 0;
+}
+
+.visitButtonContainer {
+  background-color: #202124;
+  height: 18%;
+  margin: 0;
+  padding-left: 4px;
+}
+
+.description {
+  font-weight: 200;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 460px) {
   h3 {
     font-size: 1rem;
   }

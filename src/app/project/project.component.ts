@@ -4,15 +4,19 @@ import { Project } from '../shared/models/Project.model';
 @Component({
   selector: 'app-project',
   templateUrl: './project.component.html',
-  styleUrls: ['./project.component.css']
+  styleUrls: ['./project.component.css'],
 })
 export class ProjectComponent implements OnInit {
+  @Input() project: Project | undefined;
+  openedMoreDetails: boolean;
 
-  @Input() project: Project | undefined
-
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor() {
+    this.openedMoreDetails = false;
   }
 
+  ngOnInit(): void {}
+
+  moreDetails() {
+    this.openedMoreDetails = !this.openedMoreDetails;
+  }
 }
