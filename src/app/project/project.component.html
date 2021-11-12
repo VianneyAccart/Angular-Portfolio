@@ -10,22 +10,22 @@
             </div>
         </div>
         <div class="row descriptionContainer overflow-auto">
-            <h3 class="moreDetailsElements">{{project.projectName}}</h3>
-            <p class="moreDetailsElements">{{project.projectType}}</p>
-            <p class="technologies moreDetailsElements">{{project.usedTechnologies}}</p>
+            <h3 class="moreDetailsElements">{{project.name}}</h3>
+            <p class="moreDetailsElements">{{project.type}}</p>
+            <p class="technologies moreDetailsElements">{{project.languages}}</p>
             <p class="description">{{project.description}}</p>
         </div>
         <div class="row visitButtonContainer d-flex align-items-center">
-            <a href="{{project.projectUrl}}" target="_blank" rel="noopener noreferrer"><button (click)="moreDetails()" class="btn myButton">VISITER LE SITE</button></a>
+            <a href="{{project.url}}" target="_blank" rel="noopener noreferrer"><button (click)="moreDetails()" class="btn myButton">VISITER LE SITE</button></a>
         </div>
     </div>
 
-    <img src="{{project.projectImage}}" class="card-img-top"
-        alt="Images qui présentent le site {{project.projectName}}">
+    <img src="{{project.image}}" class="card-img-top"
+        alt="Images qui présentent le site {{project.name}}">
     <div class="card-body">
-        <h3>{{project.projectName}}</h3>
-        <p>{{project.projectType}}</p>
-        <p class="technologies">{{project.usedTechnologies}}</p>
+        <h3>{{project.name}}</h3>
+        <p>{{project.type}}</p>
+        <p class="technologies">{{project.languages}}</p>
         <div (click)="moreDetails()" class="btn myButton">EN SAVOIR PLUS</div>
     </div>
 </div>

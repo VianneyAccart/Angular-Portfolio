@@ -11,6 +11,7 @@ import { BannerComponent } from './banner/banner.component';
 import { AboutComponent } from './about/about.component';
 import { RealisationsComponent } from './realisations/realisations.component';
 import { ProjectComponent } from './project/project.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { ProjectComponent } from './project/project.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
