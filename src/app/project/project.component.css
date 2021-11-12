@@ -1,0 +1,121 @@
+p {
+  margin: 0;
+}
+
+.card {
+  background-color: #202124;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.413) 1px 1px 5px;
+}
+
+h3 {
+  color: #e9b44b;
+  font-size: 1.3rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+.technologies {
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+
+.myButton {
+  width: 10rem;
+  height: 40px;
+  border: solid 1px whitesmoke;
+  background-color: transparent;
+  color: whitesmoke;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.myButton:hover {
+  border: solid 1px #e9b44b;
+  color: #e9b44b;
+}
+
+.moreDetails {
+  display: block;
+  transition: opacity 0.5s ease-out;
+  opacity: 0;
+  background-color: #202124;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  border-radius: 2px;
+}
+
+.moreDetails.active {
+  height: 100%;
+  opacity: 1;
+}
+
+.moreDetailsElements {
+  padding-left: 20px;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+.bar:nth-child(2) {
+  opacity: 0;
+}
+
+.bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.closeButtonContainer {
+  margin: 0;
+  height: 15%;
+  background-color: #202124;
+}
+
+.descriptionContainer {
+  background-color: #202124;
+  height: 67%;
+  margin: 0;
+}
+
+.visitButtonContainer {
+  background-color: #202124;
+  height: 18%;
+  margin: 0;
+  padding-left: 4px;
+}
+
+.description {
+  font-weight: 200;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 460px) {
+  h3 {
+    font-size: 1rem;
+  }
+
+  .descriptionContainer {
+    height:65%;
+  }
+
+  .visitButtonContainer {
+    height: 20%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  h3 {
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,56 @@
+section {
+  height: 100vh;
+  background: #202124;
+  background-image: url("/assets/img/background.png");
+}
+
+h1,
+.title {
+  color: whitesmoke;
+  font-weight: 100;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 3rem;
+}
+
+.highlightWords {
+  color: #e9b44b;
+  font-weight: 200;
+}
+
+.bi.bi-arrow-down-circle {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  z-index: 0;
+}
+
+.bi.bi-arrow-down-circle:hover {
+  color: #e9b44b;
+}
+
+.bounce {
+  animation-name: bounce;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(0px, 10px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1,
+  .title {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}

@@ -1,18 +1,14 @@
 <header>
-    <nav class="navbar d-flex justify-content-between align-items-center w-100">
-        <a href="#"><img [src]="imageSource" alt="logo" class="nav-logo"></a>
+    <nav class="navbar d-flex justify-content-end align-items-center w-100">
         <ul [ngClass]="{'active' : openedMobileMenu === true}" class="nav-menu">
             <li class="nav-item">
-                <a href="#" class="nav-link">Compétences</a>
+                <a routerLink="/" fragment="about" class="nav-link">A PROPOS</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Réalisations</a>
+                <a routerLink="/" fragment="realisations" class="nav-link">REALISATIONS</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Contact</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Mode</a>
+                <a routerLink="/" fragment="contact" class="nav-link">CONTACT</a>
             </li>
         </ul>
         <div [ngClass]="{'active' : openedMobileMenu === true}" (click)="mobileMenu()" class="hamburger">
