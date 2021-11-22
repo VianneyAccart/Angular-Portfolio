@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Project } from '../shared/models/Project.model';
-import { ProjectsService } from '../projects.service';
+import { ProjectsService } from '../shared/services/projects.service';
 
 @Component({
   selector: 'app-realisations',
@@ -18,7 +18,7 @@ export class RealisationsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.projectsService.getProjects().subscribe((response) => {
+    this.projectsService.getProjects().subscribe((response: any) => {
       this.projects = response;
     })
   }
