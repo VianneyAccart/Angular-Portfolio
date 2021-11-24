@@ -14,4 +14,16 @@ export class ProjectsService {
   getProjects(): Observable<Project[]> {
     return this.httpClient.get<Project[]>('assets/projects.json');
   }
+
+  // Filter projects by used technologies
+  filterProjectsByTechno(techno: string, projects: Project[]) {
+    const filteredProjects: Project[] = new Array();
+    // If techno is equal to 'All', all projects must be displayed
+    if (techno === 'All') return projects;
+    projects.forEach(project => {
+      // If a project includes the right technology keyword (= techno), put its into filteredProjects
+      if (project.languages.includes(techno)) filteredProjects.push(project)
+    });
+    return filteredProjects;
+  }
 }

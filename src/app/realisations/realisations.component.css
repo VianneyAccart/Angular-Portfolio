@@ -26,7 +26,7 @@ h2 {
   margin-top: 20px;
 }
 
-.myButton:hover {
+.myButton:hover, .selectedFilter {
   border: solid 1px #e9b44b;
   color: #e9b44b;
 }
