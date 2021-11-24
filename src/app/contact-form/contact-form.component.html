@@ -1,5 +1,5 @@
 <form (ngSubmit)="myContactForm.valid && onSubmit()" [formGroup]="contactForm" #myContactForm="ngForm">
-    <div class="container col-md-8">
+    <div class="container col-lg-6">
         <div class="row">
             <div class="col-md-6">
                 <div class="form-floating mb-3">
@@ -33,10 +33,5 @@
             <ngx-recaptcha2 #captchaElem [siteKey]="siteKey" formControlName="recaptcha"></ngx-recaptcha2>
         </div>
         <button class="myButton mt-3" type="submit">ENVOYER</button>
-
-        <div *ngIf="displaySubmitModal" class="modal-dialog modal-dialog-centered">
-           test
-        </div>
-
     </div>
 </form>

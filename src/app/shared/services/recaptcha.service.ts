@@ -9,6 +9,7 @@ export class RecaptchaService {
 
   constructor(private httpClient: HttpClient) { }
 
+  // Get recaptcha public API key
   getRecaptchaKey(): Observable<any> {
     return this.httpClient.get('/assets/recaptchaKey.json');
   }

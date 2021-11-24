@@ -1,14 +1,14 @@
 .myButton {
-    width: 10rem;
-    height: 40px;
-    border: solid 1px whitesmoke;
-    background-color: transparent;
-    color: whitesmoke;
-    font-weight: 300;
-    font-size: 1rem;
-  }
-  
-  .myButton:hover {
-    border: solid 1px #e9b44b;
-    color: #e9b44b;
-  }
+  width: 10rem;
+  height: 40px;
+  border: solid 1px whitesmoke;
+  background-color: transparent;
+  color: whitesmoke;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.myButton:hover {
+  border: solid 1px #e9b44b;
+  color: #e9b44b;
+}
