@@ -13,12 +13,12 @@
   color: #e9b44b;
 }
 
-.invalid {
+.invalid, .loading {
   color: grey;
   border: solid 1px grey;
 }
 
-.invalid:hover {
+.invalid:hover, .loading:hover {
   border: solid 1px grey;
   color: grey;
 }

@@ -31,7 +31,7 @@
             </div>
         </div>
         <input class="hidden" type="text" formControlName="honeypot">
-        <button [ngClass]="{'invalid' : myContactForm.invalid}" [disabled]="isLoading || myContactForm.invalid"
+        <button [ngClass]="{'invalid' : myContactForm.invalid, 'loading' : isLoading}" [disabled]="isLoading || myContactForm.invalid"
             class="myButton mt-3" type="submit">ENVOYER</button>
         <div *ngIf="submitted" class="mt-5">
             <p class="responseMessage">{{responseMessage}}</p>
