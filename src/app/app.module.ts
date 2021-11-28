@@ -16,6 +16,8 @@ import { ContactComponent } from './contact/contact.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxCaptchaModule } from 'ngx-captcha';
+import { MentionsLegalesComponent } from './mentions-legales/mentions-legales.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { NgxCaptchaModule } from 'ngx-captcha';
     RealisationsComponent,
     ProjectComponent,
     ContactComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    MentionsLegalesComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

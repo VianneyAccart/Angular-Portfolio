@@ -16,7 +16,8 @@ a,
 h1,
 h2,
 h3,
-h4 {
+h4, 
+li {
   font-family: "Poppins", sans-serif;
   color: whitesmoke;
 }
