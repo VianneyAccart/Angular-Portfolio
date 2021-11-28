@@ -56,6 +56,10 @@ export class ContactFormComponent {
             }
             this.contactForm.enable(); // re enable the form after a success
             this.submitted = true; // show the response message
+            // Remove responseMessage after 10 sec
+            setTimeout(() => {
+              this.submitted = false
+            }, 10000);
             this.isLoading = false; // re enable the submit button
             this.contactForm.reset(); // Reset input values after submitting the form
           },
