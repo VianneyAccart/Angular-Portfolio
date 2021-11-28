@@ -1,0 +1,18 @@
+section {
+  height: auto;
+  background-color: #202124;
+  padding-bottom: 150px;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 100px 0 50px;
+}
+
+.intro {
+  font-size: 1.5rem;
+  font-weight: 100;
+  line-height: 1.6rem;
+  margin-bottom: 75px;
+}

@@ -4,14 +4,23 @@
             <h2 id="realisations">REALISATIONS</h2>
         </div>
     </div>
+    <!-- Buttons used to filter projects -->
+    <div class="row d-flex justify-content-center mt-3 mb-5">
+        <div class="d-flex justify-content-center flex-wrap">
+            <button [ngClass]="{'selectedFilter' : projectsFilter === 'All'}" (click)="filterProjects($event)" id="All" class="myButton mx-1">TOUTES</button>
+            <button [ngClass]="{'selectedFilter' : projectsFilter === 'JavaScript'}" (click)="filterProjects($event)" id="JavaScript" class="myButton mx-1">JAVASCRIPT</button>
+            <button [ngClass]="{'selectedFilter' : projectsFilter === 'Angular'}" (click)="filterProjects($event)" id="Angular" class="myButton mx-1">ANGULAR</button>
+            <button [ngClass]="{'selectedFilter' : projectsFilter === 'WordPress'}" (click)="filterProjects($event)" id="WordPress" class="myButton mx-1">WORDPRESS</button>
+        </div>
+    </div>
     <div class="row d-flex justify-content-center">
         <div class="container col-10 d-flex justify-content-center">
-            <app-project class="col-12 col-md-6 col-xl-4 my-3 px-3" *ngFor="let project of projects"
+            <app-project class="col-12 col-md-6 col-xl-4 my-3 px-3" *ngFor="let project of filteredProjects"
                 [project]="project"></app-project>
         </div>
     </div>
     <div class="row moreProjects">
         <p class="text-center">Vous souhaitez découvrir plus de projets ?</p>
-        <a [href]="github" class="text-center" target="_blank" rel="noopener noreferrer"><button class="myButton">MON GITHUB</button></a>
+        <a href="https://github.com/VianneyAccart" class="text-center" target="_blank" rel="noopener noreferrer"><button class="myButton">MON GITHUB</button></a>
     </div>
 </section>
