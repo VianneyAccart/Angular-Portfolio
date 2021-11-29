@@ -1,0 +1,42 @@
+.footer {
+  width: 100%;
+  bottom: 0;
+  position: sticky;
+}
+
+.container-fluid {
+  background-color: #202124;
+  padding: 0 50px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 100px 0 50px;
+  line-height: 3rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+p,
+a,
+li {
+  color: whitesmoke;
+  font-size: 1.1rem;
+  font-weight: 100;
+  margin: 0;
+  line-height: 1.6rem;
+}
+
+a:hover {
+  color: #e9b44b;
+}
+
+@media screen and (max-width: 768px) {
+  .container-fluid {
+    padding: 0 25px;
+  }
+}

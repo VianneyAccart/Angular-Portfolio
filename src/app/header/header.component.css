@@ -22,8 +22,6 @@ a {
 .navbar {
   padding: 1.5rem;
   background-color: #303134;
-  position: sticky;
-  top: 0;
 }
 
 .hamburger {

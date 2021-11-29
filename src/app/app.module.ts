@@ -12,7 +12,12 @@ import { AboutComponent } from './about/about.component';
 import { RealisationsComponent } from './realisations/realisations.component';
 import { ProjectComponent } from './project/project.component';
 import { HttpClientModule } from '@angular/common/http';
-
+import { ContactComponent } from './contact/contact.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgxCaptchaModule } from 'ngx-captcha';
+import { MentionsLegalesComponent } from './mentions-legales/mentions-legales.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -23,13 +28,21 @@ import { HttpClientModule } from '@angular/common/http';
     BannerComponent,
     AboutComponent,
     RealisationsComponent,
-    ProjectComponent
+    ProjectComponent,
+    ContactComponent,
+    ContactFormComponent,
+    MentionsLegalesComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule,
+    NgxCaptchaModule 
+
   ],
   providers: [],
   bootstrap: [AppComponent]

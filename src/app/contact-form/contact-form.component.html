@@ -1,0 +1,40 @@
+<form (ngSubmit)="myContactForm.valid && onSubmit()" [formGroup]="contactForm" #myContactForm="ngForm">
+    <div class="container col-lg-6">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="firstName" placeholder="2 caractères minimum"
+                        formControlName="firstName">
+                    <label for="firstName">Prénom<span class="requiredField"> *</span></label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="lastName" placeholder="2 caractères minimum"
+                        formControlName="lastName">
+                    <label for="lastName">Nom<span class="requiredField"> *</span></label>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="email" placeholder="Entrez votre adresse email"
+                    formControlName="email">
+                <label for="email">Adresse email<span class="requiredField"> *</span></label>
+            </div>
+        </div>
+        <div>
+            <div class="form-floating mb-3">
+                <textarea class="form-control" placeholder="Précisez votre demande" id="message"
+                    formControlName="message" style="height: 100px"></textarea>
+                <label for="message">Message<span class="requiredField"> *</span></label>
+            </div>
+        </div>
+        <input class="hidden" type="text" formControlName="honeypot">
+        <button [ngClass]="{'invalid' : myContactForm.invalid, 'loading' : isLoading}" [disabled]="isLoading || myContactForm.invalid"
+            class="myButton mt-3" type="submit">ENVOYER</button>
+        <div *ngIf="submitted" class="mt-5">
+            <p class="responseMessage">{{responseMessage}}</p>
+        </div>
+    </div>
+</form>

@@ -1,5 +1,13 @@
 [
     {
+        "name" : "Chop'Ton Job",
+        "type" : "Outil de recherche d'entreprises",
+        "languages" : "HTML / CSS / TypeScript / Angular",
+        "image" : "/assets/img/chop-ton-job.jpg",
+        "url" : "https://chop-ton-job.web.app",
+        "description" : "Chop'Ton Job est une plateforme qui permet de trouver des entreprises à fort potentiel d'embauche qui recrutent des profils tech. La recherche s'effectue par département(s) ou par géolocalisation, en choisissant un groupe de métiers. Les données sur les entreprises proviennent d'une API."
+    },
+    {
         "name" : "Rock'Quest",
         "type" : "Jeu de rythme",
         "languages" : "HTML / CSS / JavaScript",
@@ -51,7 +59,7 @@
         "name" : "Blog Enbasdemarue",
         "type" : "Site vitrine lié à une marketplace",
         "languages" : "WordPress",
-        "image" : "/assets/img/enbasdemarue.jpg",
+        "image" : "/assets/img/blog-enbasdemarue.jpg",
         "url" : "https://www.blog.enbasdemarue.fr/",
         "description" : "Ce blog a été créé pour présenter la marketplace Enbasdemarue. L'objectif était d'apporter des informations sur le fonctionnement de la marketplace, des tutoriels pour les adhérents et une partie blog avec les actualités. Un travail du SEO a été effectué. Une partie marketing a été mise en place avec une gestion automatisée d'envoi de mails. Le site n'est plus géré par mes soins."
     }

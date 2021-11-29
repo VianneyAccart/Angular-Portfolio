@@ -1,0 +1,51 @@
+.footer {
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+}
+
+.container-fluid {
+  background-color: #202124;
+  padding: 0 50px;
+}
+
+.error {
+  margin-top: 15rem;
+  font-size: 15rem;
+  font-weight: 800;
+  color: #30313472;
+}
+
+p {
+  color: whitesmoke;
+  font-size: 1.6rem;
+  font-weight: 100;
+  margin: 0;
+  line-height: 1.6rem;
+}
+
+.myButton {
+    width: 14rem;
+    height: 50px;
+    border: solid 1px whitesmoke;
+    background-color: transparent;
+    color: whitesmoke;
+    font-weight: 100;
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+  
+  .myButton:hover, .selectedFilter {
+    border: solid 1px #e9b44b;
+    color: #e9b44b;
+  }
+
+@media screen and (max-width: 768px) {
+  .container-fluid {
+    padding: 0 25px;
+  }
+
+  .error {
+    font-size: 9rem;
+  }
+}
