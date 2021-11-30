@@ -41,6 +41,20 @@ h2 {
   line-height: 1.6rem;
 }
 
+/* Add transition when projects are filtered */
+@keyframes AppearsTransition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100 ease-out;
+  } 
+}
+
+.transition {
+  animation: AppearsTransition 1.5s;
+}
+
 @media screen and (max-width: 1200px) {
   section {
     padding-bottom: 75px;

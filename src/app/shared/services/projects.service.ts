@@ -4,11 +4,10 @@ import { Observable } from 'rxjs';
 import { Project } from '../models/Project.model';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ProjectsService {
-
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient) {}
 
   // Get projects from projects.json
   getProjects(): Observable<Project[]> {
@@ -20,9 +19,9 @@ export class ProjectsService {
     const filteredProjects: Project[] = new Array();
     // If techno is equal to 'All', all projects must be displayed
     if (techno === 'All') return projects;
-    projects.forEach(project => {
+    projects.forEach((project) => {
       // If a project includes the right technology keyword (= techno), put its into filteredProjects
-      if (project.languages.includes(techno)) filteredProjects.push(project)
+      if (project.languages.includes(techno)) filteredProjects.push(project);
     });
     return filteredProjects;
   }

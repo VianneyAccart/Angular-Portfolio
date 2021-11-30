@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Project } from '../shared/models/Project.model';
 
 @Component({
@@ -6,7 +6,8 @@ import { Project } from '../shared/models/Project.model';
   templateUrl: './project.component.html',
   styleUrls: ['./project.component.css'],
 })
-export class ProjectComponent implements OnInit {
+export class ProjectComponent {
+  // Get project list from parent (realisations.component)
   @Input() project: Project | undefined;
   openedMoreDetails: boolean;
 
@@ -14,8 +15,7 @@ export class ProjectComponent implements OnInit {
     this.openedMoreDetails = false;
   }
 
-  ngOnInit(): void {}
-
+  // Show/Hide more details on each project
   moreDetails() {
     this.openedMoreDetails = !this.openedMoreDetails;
   }
