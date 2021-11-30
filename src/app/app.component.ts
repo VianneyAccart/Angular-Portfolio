@@ -17,7 +17,7 @@ export class AppComponent implements OnInit{
       { name: 'robots', content: 'index, follow' },
       { name: 'author', content: 'Vianney Accart' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'date', content: '2021-11-29', scheme: 'YYYY-MM-DD' },
+      { name: 'date', content: '2021-11-30', scheme: 'YYYY-MM-DD' },
       { charset: 'UTF-8' }
     ]);
     this.canonicalService.setCanonicalURL();
