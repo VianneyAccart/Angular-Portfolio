@@ -8,6 +8,11 @@ p {
   box-shadow: rgba(0, 0, 0, 0.413) 1px 1px 5px;
 }
 
+.card-img-top {
+  max-width: 634px;
+  max-height: 368px;
+}
+
 h3 {
   color: #e9b44b;
   font-size: 1.3rem;
