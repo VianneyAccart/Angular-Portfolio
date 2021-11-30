@@ -1,5 +1,13 @@
 [
     {
+        "name" : "Meta Sound Contest",
+        "type" : "Plateforme de vote",
+        "languages" : "HTML / CSS / TypeScript / Angular / Firebase",
+        "image" : "/assets/img/meta-sound-contest.webp",
+        "url" : "https://meta-sound-contest.web.app/",
+        "description" : "Meta Sound Contest est une application de vote humoristique qui permet d'élire l'instrument de musique le plus insolite qui sera utilisé lors du premier concert au sein du Metavers. L'application a été réalisée en groupe et en 28h lors d'un hackathon sur le thème de la musique."
+    },
+    {
         "name" : "Chop'Ton Job",
         "type" : "Outil de recherche d'entreprises",
         "languages" : "HTML / CSS / TypeScript / Angular",
@@ -9,7 +17,7 @@
     },
     {
         "name" : "Rock'Quest",
-        "type" : "Jeu de rythme",
+        "type" : "Jeu de rythme musical",
         "languages" : "HTML / CSS / JavaScript",
         "image" : "/assets/img/rock-quest.webp",
         "url" : "https://rockquest.netlify.app",
