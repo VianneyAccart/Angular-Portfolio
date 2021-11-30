@@ -27,6 +27,7 @@ export class ContactFormComponent {
     });
   }
 
+  // Send an email when contact form is submitted
   onSubmit() {
     if (
       this.contactForm.valid &&
@@ -58,7 +59,7 @@ export class ContactFormComponent {
             this.submitted = true; // show the response message
             // Remove responseMessage after 10 sec
             setTimeout(() => {
-              this.submitted = false
+              this.submitted = false;
             }, 10000);
             this.isLoading = false; // re enable the submit button
             this.contactForm.reset(); // Reset input values after submitting the form

@@ -2,12 +2,10 @@ import { Injectable, Inject } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
-
 export class CanonicalService {
-
-  constructor(@Inject(DOCUMENT) private dom: any) { }
+  constructor(@Inject(DOCUMENT) private dom: any) {}
 
   // Set canonical url to prevent duplicate url
   setCanonicalURL(url?: string) {
