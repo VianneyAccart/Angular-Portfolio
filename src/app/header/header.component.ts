@@ -15,7 +15,12 @@ export class HeaderComponent {
   }
 
   // Permet d'ouvrir et de fermer le menu burger sur mobile
-  mobileMenu() {
+  mobileMenu(): void {
     this.openedMobileMenu = !this.openedMobileMenu;
+  }
+
+  // Permet de fermer le menu lors d'un clic sur un lien du menu
+  closeMenu():void {
+    this.openedMobileMenu = false;
   }
 }
