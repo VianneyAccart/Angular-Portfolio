@@ -7,20 +7,18 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   openedMobileMenu: boolean;
-  imageSource: string;
 
   constructor() {
     this.openedMobileMenu = false;
-    this.imageSource = './assets/img/portrait-vianney-rond-nobg.png';
   }
 
-  // Permet d'ouvrir et de fermer le menu burger sur mobile
+  // Toggle between opened and closed mobile menu
   mobileMenu(): void {
     this.openedMobileMenu = !this.openedMobileMenu;
   }
 
-  // Permet de fermer le menu lors d'un clic sur un lien du menu
-  closeMenu():void {
+  // Close mobile menu when user clicks on menu link
+  closeMenu(): void {
     this.openedMobileMenu = false;
   }
 }
